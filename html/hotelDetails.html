@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>	
+	<title>宾馆详情</title>	
+	<link rel="stylesheet" href="../gmu/css/calendars.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<header class="tit">
+			<h2><span id="hotel_total"></span>酒店详情</h2><a href="" id="detail_return" class="return_up">左箭头</a>
+		</header>
+		<div id="detailscroll">
+			<div class="detailscroll">								
+				<div class="banner">
+					<img src="../images/details.jpg" alt="">
+					<p>查看图集</p>
+				</div>
+				<section class="msg">
+					<h2 id="detail_nav"><a href="javascript:void(0)" class="on">基本信息</a><a href="javascript:void(0)">酒店介绍</a></h2>
+					<div id="base" class="base">				
+						<div class="on">
+							<h3 id="hotel_name"></h3>
+							<ul id="hotel_intro">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div>
+							<h3>酒店信息</h3>
+							<article id="intro"></article>
+							<p class="detail_btn">展开更多</p>
+							<h3>酒店设施</h3>
+							<article id="facility"></article>
+							<p class="detail_btn">展开更多</p>
+						</div>
+					</div>
+				</section>						
+				<div class="day daydet">
+					入住 <span id="change_in"></span><input type="hidden" id="date_in"> 离开 <span id="change_out"></span><input type="hidden" id="date_out"><a href="javascript:void(0)" id="change_date" type="details">修改</a>
+				</div>
+				<div class="detail_container" id="detail_container">
+					<div class="none" id="none">暂无查询结果,请重新选择</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="detail_reserve">
+		<dl>
+			<dt>
+				<img src="" alt="">
+				<div>
+					<h2>标准大床房</h2>
+					<span>￥ 90</span>
+					<em>担保</em>
+					<input type="hidden" id="rooms">
+					<input type="hidden" id="typeId">
+					<input type="hidden" id="bedType">					
+					<input type="hidden" id="roomPrice">
+				</div>
+				<i id="detail_close">关闭</i>
+			</dt>
+			<dd>面积<span>12m2</span></dd>
+			<dd>可住<span>1人</span></dd>
+			<dd>床型<span>单人床1.2米，1张</span></dd>
+			<dd>宽带<span>无</span></dd>
+			<dd>提供<span>免费早餐</span></dd>			
+		</dl>
+		<p>
+			<a href="javascript:void(0)" class="reserve_btn" id="reserve_btn">立即预订</a>
+		</p>
+	</div>	
+</body>
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../lib/iscroll5.js"></script>
+	<script src="../js/event.js"></script>
+	<script src="../js/touch.js"></script>
+	<script src="../js/fx.js"></script>
+	<script src="../gmu/js/gmu.js"></script>
+	<script src="../gmu/js/event.js"></script>
+	<script src="../gmu/js/parseTpl.js"></script>
+	<script src="../gmu/js/touch.js"></script>
+	<script src="../gmu/js/widget.js"></script>
+	<script src="../gmu/js/highlight.js"></script>
+	<script src="../gmu/js/calendar.js"></script>
+	<script src="../gmu/js/$picker.js"></script>
+	<script src="../gmu/js/matchMedia.js"></script>
+	<script src="../data/hotelBrand.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/detail.js"></script>
+</html>

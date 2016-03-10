@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>	
+	<title>找回密码</title>	
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<header class="tit">
+			<h2><span id="hotel_total"></span>找回密码</h2><a href="../index.html" class="return_up">左箭头</a>
+		</header>				
+		<div class="login find">
+			<input type="text" id="userid" placeholder="输入账号或手机号">
+			<input type="text" id="usermsg" placeholder="输入提示问题">			
+			<input type="text" id="usermsg" placeholder="输入问题答案">
+			<p class="findBtn" id="findBtn">确认提交</p>
+		</div>
+	</div>	
+</body>
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/login.js"></script>
+	<script>
+		login.userLogin();
+	</script>
+</html>

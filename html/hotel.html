@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>	
+	<title>宾馆</title>	
+	<link rel="stylesheet" href="../gmu/css/calendars.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<div class="top_tit">
+		<header class="tit">
+			<h2><span id="hotel_total"></span>&nbsp;间酒店</h2><a href="../index.html" class="return_up">左箭头</a>
+		</header>				
+		<div class="day">
+			入住 <span id="change_in"></span><input type="hidden" id="date_in"> 离开 <span id="change_out"></span><input type="hidden" id="date_out"><a href="javascript:void(0)" id="change_date" type="hotel">修改</a>
+		</div>
+		</div>		
+		<section class="city-hotel" id="city_hotel">
+			<div class="scroll_box">
+			<ul class="hotel_list" id="hotel_list">
+			</ul>
+			<div class="load_more" id="load_more"><a href="javascript:void(0)">点击加载更多</a></div>
+			<div class="none" id="none">暂无查询结果,请重新选择</div>
+			</div>	
+		</section>
+		<div class="nav" id="navbox">
+			<ul id="nav">
+				<li class="on">排序<span>^</span></li>
+				<li>价格<span>^</span></li>
+				<li>品牌<span>^</span></li>
+				<li>星级<span>^</span></li>
+			</ul>
+
+		</div>
+		<div class="con_list" id="con_list">
+			<div class="incon scroll1" >
+				<ol id="sort_box">
+				</ol>
+			</div>			
+			<div class="incon scroll2">
+				<ol id="price_box">
+				</ol>
+			</div>			
+			<div class="incon scroll3">
+				<ol id="brand_box">
+				</ol>
+			</div>				
+			<div class="incon scroll4">
+				<ol id="star_box">
+				</ol>
+			</div>
+			<input type="hidden" id="sort">
+			<input type="hidden" id="price">
+			<input type="hidden" id="min"> 
+			<input type="hidden" id="max">
+			<input type="hidden" id="brand">
+			<input type="hidden" id="star">
+		</div>
+	</div>
+</body>
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../lib/iscroll5.js"></script>
+	<script src="../js/event.js"></script>
+	<script src="../js/touch.js"></script>
+	<script src="../js/fx.js"></script>
+	<script src="../gmu/js/gmu.js"></script>
+	<script src="../gmu/js/event.js"></script>
+	<script src="../gmu/js/parseTpl.js"></script>
+	<script src="../gmu/js/touch.js"></script>
+	<script src="../gmu/js/widget.js"></script>
+	<script src="../gmu/js/highlight.js"></script>
+	<script src="../gmu/js/calendar.js"></script>
+	<script src="../gmu/js/$picker.js"></script>
+	<script src="../gmu/js/matchMedia.js"></script>
+	<script src="../data/hotelBrand.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/hotel.js"></script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>	
+	<title>用户注册</title>	
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<header class="tit">
+			<h2><span id="hotel_total"></span>用户注册</h2><a href="../index.html" class="return_up">左箭头</a>
+			<a href="../index.html" class="return_home"></a>
+		</header>				
+		<div class="register">
+		<form action="../server/registersubmit.php" method="post" id="form1" name="form1">
+			<div class="input">
+				<input type="text" id="phone" placeholder="请输入手机号码">
+			</div>
+			<div class="input">
+				<input type="password" id="password" placeholder="输入密码">
+				<div class="pwd_on" id="pwd_onoff"><span id="icon">开关</span></div>
+			</div>			
+			<div class="input">
+				<input type="text" id="code" placeholder="获取验证码">
+				<div id="verify" class="verify">获取验证码</div>
+			</div>			
+			<div class="input read" id="input_read">
+				<span></span>
+				<input type="hidden" value="0" id="read">
+				<label for="">我已阅读并同意《会员条款》</label>
+			</div>		
+			<p id="register">注&nbsp;&nbsp;册</p>
+		</form>
+		</div>
+	</div>	
+</body>
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/register.js"></script>
+	<script>
+		register.register();
+	</script>
+</html>

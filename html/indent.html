@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>	
+	<title>订单填写</title>	
+	<link rel="stylesheet" href="../gmu/css/calendars.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<header class="tit">
+			<h2><span id="hotel_total"></span>订单填写</h2><a href="../index.html" class="return_up">左箭头</a>
+		</header>	
+		<div class="top_tit indent_s">
+			<div class="scroll">
+				<div class="hotel_name" id="hotel_name">
+					<!-- <div class="hotel_con">
+						<img src="" alt="" id="room_img">
+						<div class="hotel_tit">
+							<h2 id="hotelName">北京王府井希尔顿大酒店</h2>
+							<h2 id="roomType">标准大床房</h2>
+							<p><span id="roomPrice">￥ 90</span><i>担保</i></p>
+						</div>
+					</div>
+					<div class="date_inout">
+						<div class="date_in">
+							<label for="">入住</label>
+							<span>12月8日</span>
+						</div>	
+						<div class="date_out">
+							<label for="">离店</label>
+							<span>12月11日</span>
+						</div>	
+					</div> -->
+				</div>
+				<div class="msg_list">
+					<h3 class="room_msg">房间信息</h3>
+					<ul class="list_con">
+						<li><label for="">到店时间</label><div class="check_time"><b>19之前</b><em></em></div></li>
+						<li><label for="">房间数量</label><div>
+						<i id="sub" class="cur">-</i><input type="text" readonly="readonly" id="nums" value="1"></input><i id="add">+</i></div></li>
+						<li><label for="">房间小计</label><div><span id="total"></span><input type="hidden" id="h_total"></div></li>
+					</ul>
+					<form id="user_form" class="user_form">			
+						<h3 class="room_msg">入住人信息</h3>
+						<div id="user_msg">	
+							<ul class="user_row">
+								<li><label for="">姓名</label><input type="text" placeholder="每间只需填写一个姓名" id="u_name_1"><span></span></li>
+								<li><label for="">证件</label><input type="text" placeholder="入住人身份证号/护照号" id="u_card_1"><span></span></li>
+							</ul>
+						</div>			
+						<h3 class="room_msg">联系人信息</h3>
+						<div id="linkman">
+							<ul class="linkman_msg">
+								<li><label for="">姓名</label><input type="text" placeholder="联系人姓名" id="l_name"><span></span></li>
+								<li><label for="">手机</label><input type="text" placeholder="用于接受通知短信" id="l_phone"><span></span></li>
+							</ul>
+						</div>
+					</form>
+					<div class="hint">
+						<h2>温馨提示：</h2>
+						<p>当前房间紧张，需冻结您的信用卡金额90元用于担保订单，如订单不确定我们将立刻进行解冻。该订单确认后不可被取消和修改。若未入住或取消修改，担保费用将不予退还。</p>
+					</div>
+				</div>		
+				<div class="footer_box">
+					<p>担保交易：￥90</p>
+					<span id="reserve_btn">立即预定</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../lib/iscroll5.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/indent.js"></script>
+	<script>
+		indent.Dom();
+		//var scroll_ind=new IScroll('.top_tit');
+	</script>
+</html>
